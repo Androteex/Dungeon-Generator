@@ -1,0 +1,56 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS%20Stylesheets/MainMenu.uss?fileID=7433441132597879392&amp;guid=22b14d993937800449c33d4712229f20&amp;type=3#MainMenu" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(39, 134, 174);">
+        <ui:VisualElement name="Body_Container" class="bodyContainer" style="flex-grow: 1; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+            <ui:Label tabindex="-1" text="Dungeon Generator" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" />
+            <ui:VisualElement name="Settings_Container" class="settingsContainer" style="flex-grow: 1;">
+                <ui:VisualElement name="Room_Size_Container" class="settingsItemContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Min and Max Room Size (tiles)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="settingsItemText" />
+                    <ui:VisualElement name="SliderContainer" class="sliderContainer">
+                        <ui:MinMaxSlider min-value="5" max-value="20" low-limit="5" high-limit="20" name="Min_Max_Slider" picking-mode="Ignore" tabindex="0" class="settingsItemInput slider" style="overflow: visible; visibility: visible; display: flex;" />
+                        <ui:VisualElement name="LabelContainer" class="lableContainer">
+                            <ui:Label tabindex="-1" text="5 : 20" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MinMaxLabel" class="sliderLabel" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Room_Count_Container" class="settingsItemContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Treasure Rooms" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="settingsItemText" />
+                    <ui:VisualElement name="SliderContainer" class="sliderContainer">
+                        <ui:Slider high-value="5" name="Range_Slider" class="settingsItemInput slider" />
+                        <ui:VisualElement name="LabelContainer" class="lableContainer">
+                            <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="sliderLabel" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Room_Count_Container" class="settingsItemContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Shop Rooms" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="settingsItemText" />
+                    <ui:VisualElement name="SliderContainer" class="sliderContainer">
+                        <ui:Slider high-value="5" name="Range_Slider" class="settingsItemInput slider" />
+                        <ui:VisualElement name="LabelContainer" class="lableContainer">
+                            <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="sliderLabel" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Room_Count_Container" class="settingsItemContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Basic Encounter Rooms" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="settingsItemText" />
+                    <ui:VisualElement name="SliderContainer" class="sliderContainer">
+                        <ui:Slider high-value="5" name="Range_Slider" class="settingsItemInput slider" />
+                        <ui:VisualElement name="LabelContainer" class="lableContainer">
+                            <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="sliderLabel" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Room_Count_Container" class="settingsItemContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Boss Encounter Rooms" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Text" class="settingsItemText" />
+                    <ui:VisualElement name="SliderContainer" class="sliderContainer">
+                        <ui:Slider high-value="5" name="Range_Slider" class="settingsItemInput slider" />
+                        <ui:VisualElement name="LabelContainer" class="lableContainer">
+                            <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="sliderLabel" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button text="Start Generation" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start_Button" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
