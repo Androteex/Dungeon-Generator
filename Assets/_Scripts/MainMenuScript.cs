@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
 {
-    private DungeonInputManager dungeonInputManager;
+    private DungeonManager dungeonManager;
     // Start is called before the first frame update
     void Start()
     {

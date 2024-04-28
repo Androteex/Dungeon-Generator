@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505718969}
   - component: {fileID: 505718970}
+  - component: {fileID: 505718971}
   m_Layer: 0
   m_Name: Dungeon
   m_TagString: Untagged
@@ -320,6 +321,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad2fe27e25139e4f9992d5fb57796cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dungeonInput: {fileID: 11400000, guid: fcd24b00c560fa049b22fbe78d02d31e, type: 2}
+--- !u!114 &505718971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505718968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908f0ea8e8f9cb34c91fd01f991f2724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSprite: {fileID: 1839463340, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  shopSprite: {fileID: -469435777, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  mysterySprite: {fileID: -2113737537, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  treasureSprite: {fileID: 1614593164, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  encounterSprite: {fileID: 581536255, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  bossSprite: {fileID: 783475883, guid: 43c9512b84af5af4f9b78faabe1503d9, type: 3}
+  _nodePrefab: {fileID: 2734869622853796546, guid: 6738161e58f91d245afd1847a7d778f6, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +553,7 @@ GameObject:
   - component: {fileID: 1964938709}
   - component: {fileID: 1964938710}
   m_Layer: 0
-  m_Name: Input Manager
+  m_Name: Dungeon Manager
   m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,6 +586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9558cc0616e54ca4da6346f963fc29a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dungeonSeed: wassim
+  currentSeed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

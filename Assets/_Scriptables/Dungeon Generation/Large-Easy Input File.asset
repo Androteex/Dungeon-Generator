@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af44839b196af8b4cb9c0f2061bac580, type: 3}
+  m_Name: Large-Easy Input File
+  m_EditorClassIdentifier: 
+  dungeonName: Large and Easy
+  dungeonType: 2
+  dungeonDifficulty: 0
