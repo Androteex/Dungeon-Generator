@@ -5,19 +5,30 @@ using UnityEngine;
 
 public class DungeonGenerator : MonoBehaviour
 {
-    private readonly DungeonInputManager inputManager;
+    public DungeonInputBase _dungeonInput;
 
-    private Room[] generatedRooms;
+    private DungeonGraphGenerator _graphGenerator;
+    private Graph dungeonGraph;
 
     private void Start()
     {
+        Debug.Log($"Random value: {Random.Range(1, 101)}");
+        // Set up essential variables
+        _graphGenerator = gameObject.GetComponent<DungeonGraphGenerator>();
 
+        // Send appropriate variables to DungeonManager
+        DungeonManager.AddDungeonProperties(_dungeonInput);
+
+        // Start generating the dungeon
+        GenerateDungeon();
     }
     private void GenerateDungeon() 
     {
-        // Get variables from inputManager
+        Debug.Log($"Starting generation for: {_dungeonInput.dungeonName}");
 
-        // Generate a node tree based on the variables
+        // Generate a node graph with DungeonGraphGenerator
+        dungeonGraph = _graphGenerator.GenerateGraph();
+        _graphGenerator.GenerateVisualGraph(dungeonGraph);
 
         // Generate rooms and place them on the correct nodes
 
@@ -25,57 +36,6 @@ public class DungeonGenerator : MonoBehaviour
         // Connect rooms with hallways A*
 
         // Populate rooms and hallways with WFC
-    }
-}
-
-public class Room 
-{
-    public int roomWidth;
-    public int roomHeight;
-
-    public RoomType roomType;
-
-    // roomTypeIndex has to be between 0 and 4 to work
-    // 0 = Starting room
-    // 1 = Encounter room
-    // 2 = Treasure room
-    // 3 = Shop room
-    // 4 = Boss room
-    public Room(int width, int height, int roomTypeIndex) 
-    {
-        roomWidth = width;
-        roomHeight = height;
-
-        switch (roomTypeIndex)
-        {
-            case 0:
-                roomType = RoomType.Start;
-                break;
-            case 1:
-                roomType = RoomType.Encounter;
-                break;
-            case 2:
-                roomType = RoomType.Treasure;
-                break;
-            case 3:
-                roomType = RoomType.Shop;
-                break;
-            case 4:
-                roomType = RoomType.Boss;
-                break;
-            default:
-                break;
-        }
-
-    }
-
-    public enum RoomType 
-    {
-        Start,
-        Encounter,
-        Treasure,
-        Shop,
-        Boss,
     }
 }
   

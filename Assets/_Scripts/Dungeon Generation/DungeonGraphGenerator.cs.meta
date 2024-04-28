@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Scripts/Dungeon Generation/Scriptable Objects/NodeSO.cs.meta
+guid: a1aac6aa435e4cc45905abfc1f87ed3e
+========
+guid: 908f0ea8e8f9cb34c91fd01f991f2724
+>>>>>>>> test:Assets/_Scripts/Dungeon Generation/DungeonGraphGenerator.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
