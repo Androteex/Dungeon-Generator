@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c47c5b1f952804f88e044e2bf72f37, type: 3}
+  m_Name: NSE Room
+  m_EditorClassIdentifier: 
+  roomName: NSE
+  roomWidth: 10
+  roomHeight: 10
+  roomPrefab: {fileID: 9110925173440426260, guid: 2d5104859136a9c408ea2df608be4406, type: 3}
+  northConection: 1
+  westConection: 0
+  southConection: 1
+  eastConnection: 1

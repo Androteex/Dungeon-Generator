@@ -82,12 +82,12 @@ public class DungeonManager : MonoBehaviour
         switch (dungeonDifficulty)
         {
             case DungeonDifficulty.Easy:
-                // Easy dungeons have an encounter percentage of 25% (0.25f)
-                encounterPercentage = 0.5f;
+                // Easy dungeons have an encounter percentage of 40% (0.4f)
+                encounterPercentage = 0.4f;
                 break;
             case DungeonDifficulty.Normal:
                 // Normal dungeons have an encounter percentage of 50% (0.5f)
-                encounterPercentage = 0.6f;
+                encounterPercentage = 0.5f;
                 break;
             case DungeonDifficulty.Hard:
                 // Hard dungeons have an encounter percentage of 75% (0.75f)
